@@ -1,0 +1,5 @@
+project('tutorial1','cpp')
+glfw3 = dependency('glfw3')
+glm   = dependency('glm') 
+vulkan= dependency('vulkan') 
+executable('demo','main.cpp', dependencies : [glfw3,glm,vulkan])
